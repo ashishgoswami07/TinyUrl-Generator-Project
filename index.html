@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny URL Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-md">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-indigo-400">Tiny URL Generator</h1>
+            <p class="text-gray-400 mt-2">Create short & memorable links in seconds</p>
+        </div>
+
+        <div class="bg-gray-800/50 border border-gray-700 rounded-2xl p-6 md:p-8 shadow-2xl form-container">
+            <form id="url-form">
+                <div class="space-y-4">
+                    <div>
+                        <label for="long-url" class="block text-sm font-medium text-gray-300 mb-2">Enter Long URL</label>
+                        <input type="url" id="long-url" name="long-url" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" placeholder="https://example.com/my-very-long-url" required>
+                    </div>
+                    <div>
+                        <label for="title" class="block text-sm font-medium text-gray-300 mb-2">Link Title</label>
+                        <input type="text" id="title" name="title" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all" placeholder="e.g., My Awesome Page" required>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <button type="submit" id="submit-btn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 btn-glow flex items-center justify-center">
+                        <span id="btn-text">Generate Short URL</span>
+                        <i id="spinner" class="fas fa-spinner fa-spin ml-2 hidden"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="result-container" class="mt-6 hidden">
+             <div id="result-card" class="bg-gray-800/50 border border-gray-700 rounded-2xl p-6 shadow-2xl">
+                 <h3 class="font-semibold text-lg text-center mb-4">Your Short URL is Ready!</h3>
+                 <div class="flex items-center bg-gray-700 border border-gray-600 rounded-lg p-2">
+                     <input type="text" id="short-url" class="flex-grow bg-transparent text-green-400 font-mono focus:outline-none px-2" readonly>
+                     <button id="copy-btn" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-md transition-all">
+                         <i class="fas fa-copy"></i>
+                         <span id="copy-text"> Copy</span>
+                     </button>
+                 </div>
+            </div>
+        </div>
+
+        <div id="error-container" class="mt-6 hidden">
+            <div class="bg-red-900/50 border border-red-700 text-red-300 px-4 py-3 rounded-lg relative" role="alert">
+                <strong class="font-bold">Error: </strong>
+                <span class="block sm:inline" id="error-message"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

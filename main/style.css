@@ -1,0 +1,16 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.form-container {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 10px #6366f1, 0 0 20px #6366f1, 0 0 30px #6366f1;
+}
+
+.hidden {
+    display: none;
+}
