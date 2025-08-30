@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://github.com/ashishgoswami1/TinyUrl-Generator-Project">
+  <a href="https://github.com/ashishgoswami07/TinyUrl-Generator-Project">
     🔗 View TinyURL Generator Project on GitHub
   </a>
 </p>
 
 <h1 align="center"> TinyURL Generator</h1>
-<h4 align="center">A C++ based URL shortener project using DSA concepts and hash-based mapping</h4>
+<h4 align="center">A Java based URL shortener project using DSA concepts and hash-based mapping</h4>
 
 ---
 
@@ -40,7 +40,7 @@ TinyUrl-Generator-project/
 ├── backend/ → C++ logic (main.cpp, tinyurl.exe)
 ├── frontend/ → (Optional UI in HTML/CSS)
 └── README.md → <p align="center">
-  <a href="https://github.com/ashishgoswami1/TinyUrl-Generator-Project">
+  <a href="https://github.com/ashishgoswami07/TinyUrl-Generator-Project">
     🔗 View TinyURL Generator Project on GitHub
   </a>
 </p>
@@ -48,9 +48,9 @@ TinyUrl-Generator-project/
 
 ---
 
-## 🧰 Backend – C++ Logic
+## 🧰 Backend – Java Logic
 
-This folder contains the complete C++ implementation of the TinyURL Generator using:
+This folder contains the complete Java implementation of the TinyURL Generator using:
 
 - Unordered Maps (Hashing)
 - Input/Output processing
