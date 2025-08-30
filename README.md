@@ -24,15 +24,5 @@ This is a simple and efficient **TinyURL Generator** built in **Java**, designed
 
 ---
 
-## 🧪 Tech Stack
 
-| Language | Tools Used            |
-|----------|-----------------------|
-| 🧾 Java  | HashMap, Collections  |
-| 🧰 IDE   | IntelliJ / Eclipse / VS Code |
-| 🔧 Git   | GitHub for version control |
-
----
-
-## 📂 Folder Structure
 
