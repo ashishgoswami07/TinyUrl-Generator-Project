@@ -49,78 +49,16 @@ This folder contains the complete **Java implementation** of the TinyURL Generat
 - **HashMap** for storing mappings  
 - **Counter/ID logic** for generating unique short URLs  
 - **Expand** method to retrieve original links  
-
-### Example Java Code:
-
-```java
-import java.util.HashMap;
-
-class TinyUrl {
-    private HashMap<String, String> urlMap = new HashMap<>();
-    private static final String BASE_URL = "http://tinyurl.com/";
-    private int counter = 1;
-
-    // Convert long URL to short URL
-    public String shorten(String longUrl) {
-        String shortUrl = BASE_URL + counter;
-        urlMap.put(shortUrl, longUrl);
-        counter++;
-        return shortUrl;
-    }
-
-    // Retrieve original URL from short URL
-    public String expand(String shortUrl) {
-        return urlMap.getOrDefault(shortUrl, "URL not found");
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        TinyUrl tiny = new TinyUrl();
-        
-        String longUrl = "https://example.com/my-very-long-url";
-        String shortUrl = tiny.shorten(longUrl);
-        
-        System.out.println("Original URL: " + longUrl);
-        System.out.println("Shortened URL: " + shortUrl);
-        System.out.println("Expanded URL: " + tiny.expand(shortUrl));
-    }
-}
-🌐 Frontend – (Optional UI)
-
-This project can be extended with a frontend (HTML/CSS/JS):
-
-Input field for long URL
-
-Button to generate a short URL
-
-Copy-to-clipboard feature
-flowchart TD
-    A[Long URL Input] --> B[Generate Short Code using Counter/HashMap]
-    B --> C[Store Mapping: Short URL → Long URL]
-    C --> D[Return Short URL]
-    D -->|User accesses Short URL| E[Lookup in HashMap]
-    E -->|Found| F[Redirect to Original Long URL]
-    E -->|Not Found| G[Show Error: "URL not found"]
 ---
 
 ## 🎬 
 
 ![Cartoon Love GIF by Scaler (1)](https://github.com/user-attachments/assets/9fbddaa0-998b-48d0-a3eb-3e486d054e4e)
 ---
-🚀 How to Run
-🔧 Prerequisites:
 
-Install Java JDK (8 or later)
-
-Code Editor (VS Code / IntelliJ IDEA / Eclipse)
-
-cd src
-javac Main.java
 🙋‍♂️ Developed By
 
 👨‍💻 Ashish Goswami
 📧 ashishgoswami93746@gmail.com
+🌐 GitHub: ashishgoswami07
 
-🌐 GitHub: ashishgoswami1
-java Main
