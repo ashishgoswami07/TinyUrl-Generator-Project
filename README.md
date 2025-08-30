@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/ashishgoswami1/TinyUrl-Generator-Project">
+  <a href="https://github.com/ashishgoswami07/TinyUrl-Generator-Project">
     🔗 View TinyURL Generator Project on GitHub
   </a>
 </p>
@@ -24,5 +24,11 @@ This is a simple and efficient **TinyURL Generator** built in **Java**, designed
 
 ---
 
+---
+
+## 🙋‍♂️ Developed By  
+👨‍💻 **Ashish Goswami**  
+📧 [ashishgoswami93746@gmail.com](mailto:ashishgoswami93746@gmail.com)  
+🌐 [GitHub: ashishgoswami1](https://github.com/ashishgoswami1)  
 
 
