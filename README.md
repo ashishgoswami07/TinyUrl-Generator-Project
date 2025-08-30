@@ -76,7 +76,3 @@ g++ main.cpp -o tinyurl
 
 ---
 
-👉 This is formatted with **Markdown styling, emojis, sections, and code blocks** so it looks professional on GitHub.  
-
-Do you also want me to **add a project banner (logo.png at top of README)** so it looks like a portfolio project?
-
