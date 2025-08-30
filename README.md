@@ -40,33 +40,66 @@ TinyUrl-Generator-Project/
 ---
 
 ## 🧰 Backend – Java Logic
-This folder contains the complete **Java implementation** of the TinyURL Generator using:
-- **HashMap** for mapping long URLs to short codes  
-- **Input/Output processing** for user interaction  
-- **Custom ID shortening logic**  
+The backend is written fully in **Java** using **HashMap** to map long URLs to short codes.  
 
-### Files:
-- `Main.java` → entry point  
-- `TinyUrl.java` → core URL shortener logic  
+### Example Java Code:
+```java
+import java.util.HashMap;
 
----
+class TinyUrl {
+    private HashMap<String, String> urlMap = new HashMap<>();
+    private static final String BASE_URL = "http://tinyurl.com/";
+    private int counter = 1;
 
-## 🌐 Frontend (Optional)
+    // Convert long URL to short URL
+    public String shorten(String longUrl) {
+        String shortUrl = BASE_URL + counter;
+        urlMap.put(shortUrl, longUrl);
+        counter++;
+        return shortUrl;
+    }
+
+    // Retrieve original URL from short URL
+    public String expand(String shortUrl) {
+        return urlMap.getOrDefault(shortUrl, "URL not found");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        TinyUrl tiny = new TinyUrl();
+        
+        String longUrl = "https://example.com/my-very-long-url";
+        String shortUrl = tiny.shorten(longUrl);
+        
+        System.out.println("Original URL: " + longUrl);
+        System.out.println("Shortened URL: " + shortUrl);
+        System.out.println("Expanded URL: " + tiny.expand(shortUrl));
+    }
+}
+flowchart TD
+    A[Long URL Input] --> B[Generate Short Code using Counter/HashMap]
+    B --> C[Store Mapping: Short URL → Long URL]
+    C --> D[Return Short URL]
+    D -->|User accesses Short URL| E[Lookup in HashMap]
+    E -->|Found| F[Redirect to Original Long URL]
+    E -->|Not Found| G[Show Error: "URL not found"]
+🌐 Frontend (Optional)
+
 You can extend the project with a frontend:
-- Add `HTML/CSS/JS` files  
-- Style the output  
-- Build a **visual UI** to connect with Java backend  
 
----
+Add HTML/CSS/JS files
 
-## 🚀 How to Run
+Build a UI to connect with the Java backend
 
-### 🔧 Prerequisites
-- Install **Java JDK (8 or later)**  
-- Code Editor (**VS Code**, **IntelliJ IDEA**, or **Eclipse**)  
+🚀 How to Run
+🔧 Prerequisites
 
-### 💻 Steps
-```bash
+Install Java JDK (8 or later)
+
+Code Editor (VS Code, IntelliJ IDEA, or Eclipse)
+
+💻 Steps
 cd src
 javac Main.java
 java Main
@@ -81,6 +114,12 @@ java Main
 
 ---
 
-✅ This version now correctly states: **Java + DSA + HashMap implementation**.  
+✅ Now your README has:  
+- Overview  
+- Features  
+- Tech Stack  
+- Folder Structure  
+- Java Example Code  
+- **Mermaid Flowchart** (Long URL → Short URL → Retrieve Original)  
 
-Do you want me to also add a **Java code snippet preview** (like the `TinyUrl` class with HashMap logic) inside README so recruiters can quickly see how it works?
+👉 Do you also want me to add a **screenshot/demo GIF** section so visitors can visually see your project running?
