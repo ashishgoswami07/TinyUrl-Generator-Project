@@ -1,4 +1,4 @@
-# 🔗 TinyURL Generator Project
+# 🔗 View TinyURL Generator Project on GitHub
 
 A **C++ based URL shortener** project using **DSA concepts** and **hash-based mapping**.
 
