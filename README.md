@@ -95,5 +95,5 @@ g++ main.cpp -o tinyurl
 🙋‍♂️ Developed By
 👨‍💻 Ashish Goswami
 📧 ashishgoswami93746@gmail.com
-🌐 GitHub: ashishgoswami1
+🌐 GitHub: ashishgoswami07
 
