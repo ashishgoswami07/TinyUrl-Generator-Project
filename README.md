@@ -28,3 +28,55 @@ This is a simple and efficient TinyURL Generator built in C++, designed to short
 ---
 
 ## 📂 Folder Structure
+TinyUrl-Generator-Project/
+├── backend/ → C++ logic (main.cpp, tinyurl.exe)
+├── frontend/ → (Optional UI in HTML/CSS)
+├── logo.png → ashish-logo png
+└── README.md → Project documentation
+
+---
+
+## 🧰 Backend – C++ Logic
+This folder contains the complete **C++ implementation** of the TinyURL Generator using:
+- Unordered Maps (Hashing)  
+- Input/Output processing  
+- URL ID shortening logic  
+
+**Files:**
+- `main.cpp` → core logic  
+- `tinyurl.exe` → compiled output (not required on GitHub)  
+
+---
+
+## 🌐 Frontend – (Optional UI)
+This folder is meant for frontend development. You can:  
+- Add `HTML/CSS/JS` files  
+- Style the output  
+- Build a **visual UI** to connect with backend later  
+
+---
+
+## 🚀 How to Run
+
+### 🔧 Prerequisites:
+- C++ Compiler (g++, MinGW, etc.)  
+- Code Editor (**VS Code** recommended)  
+
+### 💻 Steps:
+```bash
+cd backend
+g++ main.cpp -o tinyurl
+./tinyurl
+🙋‍♂️ Developed By
+
+👨‍💻 Ashish Goswami
+📧 ashishgoswami93746@gmail.com
+
+🌐 GitHub: ashishgoswami07
+
+---
+
+👉 This is formatted with **Markdown styling, emojis, sections, and code blocks** so it looks professional on GitHub.  
+
+Do you also want me to **add a project banner (logo.png at top of README)** so it looks like a portfolio project?
+
