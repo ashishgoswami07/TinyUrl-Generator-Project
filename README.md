@@ -71,45 +71,14 @@ cd src
 javac Main.java
 java Main
 
----
-
-## 🧰 Backend – Java Logic
-This folder contains the complete **Java implementation** of the TinyURL Generator using:
-- **HashMap** for mapping long URLs to short codes  
-- **Input/Output processing** for user interaction  
-- **Custom ID shortening logic**  
-
-### Files:
-- `Main.java` → entry point  
-- `TinyUrl.java` → core URL shortener logic  
-
----
-
-## 🌐 Frontend (Optional)
-You can extend the project with a frontend:
-- Add `HTML/CSS/JS` files  
-- Style the output  
-- Build a **visual UI** to connect with Java backend  
-
----
-
-## 🚀 How to Run
-
-### 🔧 Prerequisites
-- Install **Java JDK (8 or later)**  
-- Code Editor (**VS Code**, **IntelliJ IDEA**, or **Eclipse**)  
-
-### 💻 Steps
-```bash
-cd src
-javac Main.java
-java Main
 🙋‍♂️ Developed By
 
 👨‍💻 Ashish Goswami
 📧 ashishgoswami93746@gmail.com
 
 🌐 GitHub: ashishgoswami07
+
+
 ---
 
 ✅ This version now correctly states: **Java + DSA + HashMap implementation**.  
