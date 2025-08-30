@@ -35,30 +35,4 @@ This is a simple and efficient **TinyURL Generator** built in **Java**, designed
 ---
 
 ## 📂 Folder Structure
-TinyUrl-Generator-Project/
-├── src/ → Java source files (Main.java, TinyUrl.java, etc.)
-├── bin/ → Compiled .class files
-├── logo.png → <img width="128" height="128" alt="ashish-logo" src="https://github.com/user-attachments/assets/a32ed90f-8c5f-4bee-afd0-8fe2bc2c548d" />
-└── README.md → Documentation
----
-
-## 🧰 Backend – Java Logic
-
-This folder contains the complete **Java implementation** of the TinyURL Generator using:
-
-- **HashMap** for storing mappings  
-- **Counter/ID logic** for generating unique short URLs  
-- **Expand** method to retrieve original links  
----
-
-## 🎬 
-
-![Cartoon Love GIF by Scaler (1)](https://github.com/user-attachments/assets/9fbddaa0-998b-48d0-a3eb-3e486d054e4e)
----
-
-🙋‍♂️ Developed By
-
-👨‍💻 Ashish Goswami
-📧 ashishgoswami93746@gmail.com
-🌐 GitHub: ashishgoswami07
 
