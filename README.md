@@ -27,7 +27,7 @@ This is a simple and efficient **TinyURL Generator** built in **Java**, designed
 ## 🙋‍♂️ Developed By  
 👨‍💻 **Ashish Goswami**  
 📧 [ashishgoswami93746@gmail.com](mailto:ashishgoswami93746@gmail.com)  
-🌐 [GitHub: ashishgoswami1](https://github.com/ashishgoswami07)  
+🌐 [GitHub: ashishgoswami07](https://github.com/ashishgoswami07)  
 
 
 ## 🎬 
