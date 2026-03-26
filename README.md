@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://tiny-url-generator-project.vercel.app/">
-    🔗 View TinyURL Generator Project on GitHub
+    🔗 View TinyURL Generator Project URL
   </a>
 </p>
 
